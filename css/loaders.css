@@ -84,6 +84,132 @@
 	animation-timing-function: linear;
 	animation-direction: alternate;
 }
+.squash .one {
+	-webkit-animation-name: squash-one;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: squash-one;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: squash-one;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: squash-one;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.squash .two {
+	-webkit-animation-name: squash-two;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: squash-two;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: squash-two;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: squash-two;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.squash .three {
+	-webkit-animation-name: squash-three;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: squash-three;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: squash-three;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: squash-three;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.squash .four {
+	-webkit-animation-name: squash-four;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: squash-four;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: squash-four;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: squash-four;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.squash *:before {
+	-webkit-animation-name: squash-before;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: squash-before;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: squash-before;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: squash-before;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.orbit-switch * {
+	-webkit-animation-name: orbit-switch;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: orbit-switch;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: orbit-switch;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+	animation-name: orbit-switch;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
 .slow {
 	-webkit-animation-duration: 3000ms;
 	-moz-animation-duration: 3000ms;
@@ -173,7 +299,7 @@
 	border-color: #8e44ad;
 }
 
-/* Keyframes */
+/* Spin */
 @-ms-keyframes spin { 
     from { 
         -ms-transform: rotate(0deg); 
@@ -200,5 +326,237 @@
         transform: rotate(0deg); 
     } to { 
         transform: rotate(360deg); 
+    }
+}
+
+/* Squash */
+@-ms-keyframes squash-one { 
+    0% { 
+        -ms-transform: rotate(0deg) skewX(0deg); 
+    } 50% { 
+        -ms-transform: rotate(0deg) skewX(45deg); 
+    } 100% {
+    	-ms-transform: rotate(0deg) skewX(0deg);
+    }
+} 
+@-moz-keyframes squash-one { 
+    0% { 
+        -moz-transform: rotate(0deg) skewX(0deg); 
+    } 50% { 
+        -moz-transform: rotate(0deg) skewX(45deg); 
+    } 100% {
+    	-moz-transform: rotate(0deg) skewX(0deg);
+    }
+} 
+@-webkit-keyframes squash-one { 
+    0% { 
+        -webkit-transform: rotate(0deg) skewX(0deg); 
+    } 50% { 
+        -webkit-transform: rotate(0deg) skewX(45deg); 
+    } 100% {
+    	-webkit-transform: rotate(0deg) skewX(0deg);
+    }
+} 
+@keyframes squash-one { 
+    0% { 
+        transform: rotate(0deg) skewX(0deg); 
+    } 50% { 
+        transform: rotate(0deg) skewX(45deg); 
+    } 100% {
+    	transform: rotate(0deg) skewX(0deg);
+    }
+}
+@-ms-keyframes squash-two { 
+    0% { 
+        -ms-transform: rotate(90deg) skewX(0deg); 
+    } 50% { 
+        -ms-transform: rotate(90deg) skewX(45deg); 
+    } 100% {
+    	-ms-transform: rotate(90deg) skewX(0deg);
+    }
+} 
+@-moz-keyframes squash-two { 
+    0% { 
+        -moz-transform: rotate(90deg) skewX(0deg); 
+    } 50% { 
+        -moz-transform: rotate(90deg) skewX(45deg); 
+    } 100% {
+    	-moz-transform: rotate(90deg) skewX(0deg);
+    }
+} 
+@-webkit-keyframes squash-two { 
+    0% { 
+        -webkit-transform: rotate(90deg) skewX(0deg); 
+    } 50% { 
+        -webkit-transform: rotate(90deg) skewX(45deg); 
+    } 100% {
+    	-webkit-transform: rotate(90deg) skewX(0deg);
+    }
+} 
+@keyframes squash-two { 
+    0% { 
+        transform: rotate(90deg) skewX(0deg); 
+    } 50% { 
+        transform: rotate(90deg) skewX(45deg); 
+    } 100% {
+    	transform: rotate(90deg) skewX(0deg);
+    }
+}
+@-ms-keyframes squash-three { 
+    0% { 
+        -ms-transform: rotate(180deg) skewX(0deg); 
+    } 50% { 
+        -ms-transform: rotate(180deg) skewX(45deg); 
+    } 100% {
+    	-ms-transform: rotate(180deg) skewX(0deg);
+    }
+} 
+@-moz-keyframes squash-three { 
+    0% { 
+        -moz-transform: rotate(180deg) skewX(0deg); 
+    } 50% { 
+        -moz-transform: rotate(180deg) skewX(45deg); 
+    } 100% {
+    	-moz-transform: rotate(180deg) skewX(0deg);
+    }
+} 
+@-webkit-keyframes squash-three { 
+    0% { 
+        -webkit-transform: rotate(180deg) skewX(0deg); 
+    } 50% { 
+        -webkit-transform: rotate(180deg) skewX(45deg); 
+    } 100% {
+    	-webkit-transform: rotate(180deg) skewX(0deg);
+    }
+} 
+@keyframes squash-three { 
+    0% { 
+        transform: rotate(180deg) skewX(0deg); 
+    } 50% { 
+        transform: rotate(180deg) skewX(45deg); 
+    } 100% {
+    	transform: rotate(180deg) skewX(0deg);
+    }
+}
+@-ms-keyframes squash-four { 
+    0% { 
+        -ms-transform: rotate(270deg) skewX(0deg); 
+    } 50% { 
+        -ms-transform: rotate(270deg) skewX(45deg); 
+    } 100% {
+    	-ms-transform: rotate(270deg) skewX(0deg);
+    }
+} 
+@-moz-keyframes squash-four { 
+    0% { 
+        -moz-transform: rotate(270deg) skewX(0deg); 
+    } 50% { 
+        -moz-transform: rotate(270deg) skewX(45deg); 
+    } 100% {
+    	-moz-transform: rotate(270deg) skewX(0deg);
+    }
+} 
+@-webkit-keyframes squash-four { 
+    0% { 
+        -webkit-transform: rotate(270deg) skewX(0deg); 
+    } 50% { 
+        -webkit-transform: rotate(270deg) skewX(45deg); 
+    } 100% {
+    	-webkit-transform: rotate(270deg) skewX(0deg);
+    }
+} 
+@keyframes squash-four { 
+    0% { 
+        transform: rotate(270deg) skewX(0deg); 
+    } 50% { 
+        transform: rotate(270deg) skewX(45deg); 
+    } 100% {
+    	transform: rotate(270deg) skewX(0deg);
+    }
+}
+@-ms-keyframes squash-before { 
+    0% { 
+        -ms-transform: skewX(0deg); 
+    } 50% { 
+        -ms-transform: skewX(-45deg); 
+    } 100% {
+    	-ms-transform: skewX(0deg);
+    }
+} 
+@-moz-keyframes squash-before { 
+    0% { 
+        -moz-transform: skewX(0deg); 
+    } 50% { 
+        -moz-transform: skewX(-45deg); 
+    } 100% {
+    	-moz-transform: skewX(0deg);
+    }
+} 
+@-webkit-keyframes squash-before { 
+    0% { 
+        -webkit-transform: skewX(0deg); 
+    } 50% { 
+        -webkit-transform: skewX(-45deg); 
+    } 100% {
+    	-webkit-transform: skewX(0deg);
+    }
+} 
+@keyframes squash-before { 
+    0% { 
+        transform: skewX(0deg); 
+    } 50% { 
+        transform: skewX(-45deg); 
+    } 100% {
+    	transform: skewX(0deg);
+    }
+}
+
+/* Orbit Switch */
+@-ms-keyframes orbit-switch { 
+    0% { 
+        top: -15px;
+        left: -15px;
+    } 50% { 
+        top: 5px;
+        left: 5px;
+    } 100% { 
+        top: -15px;
+        left: -15px;
+    }
+}
+@-moz-keyframes orbit-switch { 
+    0% { 
+        top: -15px;
+        left: -15px;
+    } 50% { 
+        top: 5px;
+        left: 5px;
+    } 100% { 
+        top: -15px;
+        left: -15px;
+    }
+}
+@-webkit-keyframes orbit-switch { 
+    0% { 
+        top: -15px;
+        left: -15px;
+    } 50% { 
+        top: 5px;
+        left: 5px;
+    } 100% { 
+        top: -15px;
+        left: -15px;
+    }
+}
+@keyframes orbit-switch { 
+    0% { 
+        top: -15px;
+        left: -15px;
+    } 50% { 
+        top: 5px;
+        left: 5px;
+    } 100% { 
+        top: -15px;
+        left: -15px;
     }
 }
